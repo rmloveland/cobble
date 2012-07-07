@@ -1,0 +1,53 @@
+* NAME
+
+Cobble: simple website management for busy people.
+
+* DESCRIPTION
+
+Cobble is a Perl program that will let you automatically manage your
+simple website. It works like this: you tell Cobble what directory
+your site's pages live in, along with a few other little details like
+your preferred file extensions and so forth, and it does the rest and
+leaves you alone.
+
+The default setup is very simple, but can be modified as needed. You
+write your own HTML, your own CSS, and manage your own directories of
+images and the like. Very little is dictated to you, which is good, as
+you will probably want to change things around to suit yourself. This
+is exactly as it should be.
+
+Cobble was written with simplicity in mind, so as to be easily
+modifiable. It lives in a single file; it will work on cheap shared
+hosting with FTP access, as well as on a home server. It works on flat
+files (no databases required) and all you need is a reasonable version
+of Perl 5. No non-core Perl modules are used. Taint mode is enabled by
+default for security.
+
+* BUGS AND CAVEATS
+
+Cobble was written by an amateur, for free. It is therefore definitely
+buggy, and you probably shouldn't use it at all. :-)
+
+More seriously, its overall implementation is unsophisticated and
+limited in function. The CGI portion of the code itself isn't
+beautiful, nor is the code dealing with files and
+directories. Subroutine names are descriptive in some places and not
+in others.
+
+Currently, Cobble needs a fair bit of fit and finish work. HTTP error
+codes for non-existent pages aren't there yet, among other
+things. There's still lots to do, and a lot of it can be done by
+people with minimal Perl skills (which is a feature, I think).
+
+Any offers of help, comments, advice, complaints and so on will be
+appreciated.
+
+Finally, I leave the reader with this dictionary entry
+from http://en.wiktionary.org/wiki/cobbled :
+
+/cobbled, adj./
+
+   1. (of a road surface) Laid with cobbles.
+
+   2. Crudely or roughly assembled; put together in an improvised way,
+      (as in "cobbled together")
